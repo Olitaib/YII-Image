@@ -42,14 +42,20 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'store' => '/image/store',
+                'show' => '/image/show',
+                'view/<id>' => '/image/view',
+                'api/get/<id>' => '/image/get',
+                'api/total' => '/image/total',
+                'api/rows/<page>' => '/image/rows'
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
